@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/buzina-pagination.min.css">
+</head>
+<body>
+    <header>
+      <div class="top-header">
+    <nav>
+        <div class="wrapper">
+          <div class="main-header-content">
+            <div class="tgl"><img src="images/header/menu.png"></div>
+ 
+    <div class="logo">
+              <p><span>Code</span>It</p>
+        <span class="store">store</span>
+      </div>
+
+        <ul class="nav-menu" >
+         
+            <li><a class="link-nav" href="#">Home</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="#">All brand <i class="icon-down-open"></i></a>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <ul>
+                  <li><a href="#">Пункт 1</a></li>
+                  <li><a href="#">Пункт 1</a></li>
+                  <li><a href="#">Пункт 1</a></li>
+                  <li><a href="#">Пункт 1</a></li>
+                </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Featured</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+          <div class="menu-right">
+         <div class="search">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="icon-search"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <form>
+                <p><input type="search" name="q" placeholder="Поиск по сайту"> 
+                <input type="submit" value="Найти"></p>
+               </form>
+            </div>
+          </div>
+         </div>
+            <div class="card">
+             <span><i class="icon-shopping-bag"></i>$ 460.00</span>
+             <div class="card-circle">
+               <img src="images/header/circle.png">
+             </div>
+            </div>
+     </div>
+      
+        </div>
+    </div>
+    </nav>
+    </div>
+</header>
+
+<section class="wishlist">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10"><span>My wishlist</span></div>
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
+        <ul class="wishlist-right">
+          <li><a href="#">Home</a><i class="icon-right-open"></i></li>
+          <li><a href="#">My wishlist</a></li>
+        </ul>
+      </div>
+     
+            </div>
+  </div>
+</section>
+
+<section class="products">
+  <div class="container">
+    <div class="search-main">
+    <div class="search">
+    <input type="text" class="live-search-box" placeholder="search here" id="search" />
+    </div>
+    <div class="clear-list">
+      <button onclick="delSearch()">clear list</button>
+    </div>
+    </div>
+    <div id="uniqueId">
+      
+        <div class="row">
+
+  <div class="col-sm-3"   id="myDiv">
+    <div class="product-img">
+    <img src="images/wishlistitems/huaweimate.png" alt="">
+    <div class="block">
+      <div class="hover-remove">
+        <div class="hover-remove-text">
+        <button onclick="func()">remove from list</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+     
+      
+      <h3>Huawei mate s</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="func()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-3" id="myDivTwo"  >
+    <div class="product-img">
+      <img src="images/wishlistitems/phone.png" alt="">
+      <div class="block">
+        <div class="hover-remove">
+          <div class="hover-remove-text">
+            <button onclick="funcTwo()">remove from list</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+      <h3>Sony xperia z5dfsf</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="funcTwo()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="col-sm-3" id="myDivThree" >
+    <div class="product-img">
+      <img src="images/wishlistitems/xiaomi.png" alt="">
+      <div class="block">
+        <div class="hover-remove">
+          <div class="hover-remove-text">
+            <button onclick="funcThree()">remove from list</button>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+      <h3>Xiaomi mi 41</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="funcThree()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+ <div class="col-sm-3"  id="myDivFour">
+    <div class="product-img">
+      <img src="images/wishlistitems/huaweiwhite.png" alt="">
+      <div class="block">
+        <div class="hover-remove">
+          <div class="hover-remove-text">
+            <button onclick="funcFour()">remove from list</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+      <h3>Huawei g8 4c</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="funcFour()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  
+</div>
+        </div>
+
+<div class="row">
+<div class="col-sm-3"  id="myDivFive">
+  <div class="product-img">
+    <img src="images/wishlistitems/iphone6rose.png " alt="">
+    <div class="block">
+      <div class="hover-remove">
+        <div class="hover-remove-text">
+          <button onclick="funcFive()">remove from list</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div  class="product-list">
+    <div class="shape">
+      <hr>
+    </div>
+    <h3>iphone rose gold</h3>
+    <span class="price">$280.00</span>
+
+    <div class="product-buttons">
+      <div class="remove-product">
+       <button><i onclick="funcFive()" class="icon-trash-empty"></i></button> 
+      </div>
+      <div class="card-product">
+       <button><i class="icon-basket"></i></button> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-sm-3"  id="myDivSix">
+  <div class="product-img">
+    <img src="images/wishlistitems/huaweiwhite.png" alt="">
+    <div class="block">
+      <div class="hover-remove">
+        <div class="hover-remove-text">
+          <button onclick="funcSix()">remove from list</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div  class="product-list">
+    <div class="shape">
+      <hr>
+    </div>
+    <h3>huawei g8 4c</h3>
+    <span class="price">$280.00</span>
+
+    <div class="product-buttons">
+      <div class="remove-product">
+       <button><i onclick="funcSix()" class="icon-trash-empty"></i></button> 
+      </div>
+      <div class="card-product">
+       <button><i class="icon-basket"></i></button> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="col-sm-3"  id="myDivSeven">
+  <div class="product-img">
+    <img src="images/wishlistitems/galaxycoreprime.png" alt="">
+    <div class="block">
+      <div class="hover-remove">
+        <div class="hover-remove-text">
+          <button onclick="funcSeven()">remove from list</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div  class="product-list">
+    <div class="shape">
+      <hr>
+    </div>
+    <h3>galaxy core prime</h3>
+    <span class="price">$280.00</span>
+
+    <div class="product-buttons">
+      <div class="remove-product">
+       <button><i onclick="funcSeven()" class="icon-trash-empty"></i></button> 
+      </div>
+      <div class="card-product">
+       <button><i class="icon-basket"></i></button> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="col-sm-3"  id="myDivEight">
+  <div class="product-img">
+    <img src="images/wishlistitems/iphone6s.png" alt="">
+    <div class="block">
+      <div class="hover-remove">
+        <div class="hover-remove-text">
+          <button onclick="funcEight()">remove from list</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div  class="product-list">
+    <div class="shape">
+      <hr>
+    </div>
+    <h3>Apple iphone 6s</h3>
+    <span class="price">$280.00</span>
+
+    <div class="product-buttons">
+      <div class="remove-product">
+       <button><i onclick="funcEight()" class="icon-trash-empty"></i></button> 
+      </div>
+      <div class="card-product">
+       <button><i class="icon-basket"></i></button> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+
+   
+<div class="row">
+
+  <div class="col-sm-3"   id="myDiv">
+    <div class="product-img">
+    <img src="images/wishlistitems/huaweimate.png" alt="">
+    <div class="block">
+      <div class="hover-remove">
+        <div class="hover-remove-text">
+          <button onclick="func()">remove from list</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+      <div class="blockin">
+       
+        </div>
+      
+      <h3>Huawei mate s</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="func()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-3" id="myDivTwo"  >
+    <div class="product-img">
+      <img src="images/wishlistitems/phone.png" alt="">
+      <div class="block">
+        <div class="hover-remove">
+          <div class="hover-remove-text">
+            <button onclick="funcThree()">remove from list</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+      <h3>Sony xperia z5dfsf</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="funcThree()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="col-sm-3" id="myDivThree" >
+    <div class="product-img">
+      <img src="images/wishlistitems/xiaomi.png" alt="">
+      <div class="block">
+        <div class="hover-remove">
+          <div class="hover-remove-text">
+            <button onclick="funcThree()">remove from list</button>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+      <h3>Xiaomi mi 41</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="funcThree()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+ <div class="col-sm-3"  id="myDivFour">
+    <div class="product-img">
+      <img src="images/wishlistitems/huaweiwhite.png" alt="">
+      <div class="block">
+        <div class="hover-remove">
+          <div class="hover-remove-text">
+            <button onclick="funcFour()">remove from list</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    <div  class="product-list">
+      <div class="shape">
+        <hr>
+      </div>
+      <h3>Huawei g8 4c</h3>
+      <span class="price">$280.00</span>
+
+      <div class="product-buttons">
+        <div class="remove-product">
+         <button><i onclick="funcFour()" class="icon-trash-empty"></i></button> 
+        </div>
+        <div class="card-product">
+         <button><i class="icon-basket"></i></button> 
+        </div>
+      </div>
+    </div>
+  
+</div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-sm-3"  id="myDivFive">
+            <div class="product-img">
+              <img src="images/wishlistitems/iphone6rose.png" alt="">
+              <div class="block">
+                <div class="hover-remove">
+                  <div class="hover-remove-text">
+                    <button onclick="funcFive()">remove from list</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            <div  class="product-list">
+              <div class="shape">
+                <hr>
+              </div>
+              <h3>iphone rose gold</h3>
+              <span class="price">$280.00</span>
+          
+              <div class="product-buttons">
+                <div class="remove-product">
+                 <button><i onclick="funcFive()" class="icon-trash-empty"></i></button> 
+                </div>
+                <div class="card-product">
+                 <button><i class="icon-basket"></i></button> 
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+          
+        <div class="col-sm-3"  id="myDivSix">
+            <div class="product-img">
+              <img src="images/wishlistitems/huaweiwhite.png" alt="">
+              <div class="block">
+                <div class="hover-remove">
+                  <div class="hover-remove-text">
+                    <button onclick="funcSix()">remove from list</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            <div  class="product-list">
+              <div class="shape">
+                <hr>
+              </div>
+              <h3>huawei g8 4c</h3>
+              <span class="price">$280.00</span>
+          
+              <div class="product-buttons">
+                <div class="remove-product">
+                 <button><i onclick="funcSix()" class="icon-trash-empty"></i></button> 
+                </div>
+                <div class="card-product">
+                 <button><i class="icon-basket"></i></button> 
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+           <div class="col-sm-3"  id="myDivSeven">
+            <div class="product-img">
+              <img src="images/wishlistitems/galaxycoreprime.png" alt="">
+              <div class="block">
+                <div class="hover-remove">
+                  <div class="hover-remove-text">
+                    <button onclick="funcSeven()">remove from list</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            <div  class="product-list">
+              <div class="shape">
+                <hr>
+              </div>
+              <h3>galaxy core prime</h3>
+              <span class="price">$280.00</span>
+          
+              <div class="product-buttons">
+                <div class="remove-product">
+                 <button><i onclick="funcSeven()" class="icon-trash-empty"></i></button> 
+                </div>
+                <div class="card-product">
+                 <button><i class="icon-basket"></i></button> 
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+          <div class="col-sm-3"  id="myDivEight">
+            <div class="product-img">
+              <img src="images/wishlistitems/iphone6s.png" alt="">
+              <div class="block">
+                <div class="hover-remove">
+                  <div class="hover-remove-text">
+                    <button onclick="funcEight()">remove from list</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            <div  class="product-list">
+              <div class="shape">
+                <hr>
+              </div>
+              <h3>Apple iphone 6s</h3>
+              <span class="price">$280.00</span>
+          
+              <div class="product-buttons">
+                <div class="remove-product">
+                 <button><i onclick="funcEight()" class="icon-trash-empty"></i></button> 
+                </div>
+                <div class="card-product">
+                 <button><i class="icon-basket"></i></button> 
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+          </div>
+          
+          
+ </div>
+
+
+  </div>
+  </section>
+
+ 
+ 
+    <section class="slider-main">
+      <div  class="wrapper">
+<div class="slider">
+    <div class="carousel slide" id="myCarousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3"><a href="#"><i class="icon-thumbs-up-alt"></i></a>
+            <div class="slider-text">
+            <span>full varenty</span>
+            <p>red about our warenty</p>
+            <hr style="background-color: #ccc; width: 10px; ">
+            </div>
+            
+          
+          </div>
+        </div>
+       
+     
+        <div class="item">
+          <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3"><a href="#"><i class="icon-truck"></i></a> 
+            <div class="slider-text">
+              <span>express shipping</span>
+              <p>Local & International Shipping</p>
+              <hr style="background-color: #ccc; width: 10px;">
+              </div>
+            
+          
+          </div>
+        </div>
+        <div class="item">
+          <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3"><a href="#"><i class="icon-commenting"></i></a> 
+            <div class="slider-text">
+              <span>Mobile blog</span>
+              <p>Discuss Your Favourite Phone</p>
+              <hr style="background-color: #ccc; width: 10px; ">
+              </div>
+            
+          
+          </div>
+        </div>
+       
+        <div class="item">
+          <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3"><a href="#"><i class="icon-commenting"></i></a> 
+            <div class="slider-text">
+              <span>24/7 support</span>
+              <p>Get Full Support via Chat</p>
+              <hr style="background-color: #ccc; width: 10px; ">
+              </div>
+            
+          
+          </div>
+        </div>
+       
+       
+       
+      </div>
+     
+    </div>
+    </div>
+    </div>
+    </section>
+
+<section class="subscribe">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-sm-4 col-md-3 col-lg-4 col-xl-4 ">
+        <div class="subscribe-text" id="substxt">
+          <span>subscribe to latest smartphones</span><br>
+<span>news & great deals we offer</span>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="form-group form-group-lg inner-addon">
+      
+
+ 
+	<form method="post" action="#">
+
+      <input class="emailadress" type="email" id="email" placeholder="ENTER YOUR EMAIL ADRESS">
+      <i class="icon-mail"></i>
+			<span id="valid"></span>
+	
+					<input type="submit" value="Отправить" />
+
+	</form>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-4">
+        <div class="social">
+          <div class="social-item">
+            <a href=""><i class="icon-twitter"></i></a>
+          </div>
+          <div class="social-item">
+          <a href=""><i class="icon-facebook"></i></a>
+          </div>
+          <div class="social-item">
+           <a href=""><i class="icon-linkedin"></i></a> 
+          </div>
+          <div class="social-item">
+           <a href=""> <i class="icon-gplus"></i></a>
+          </div>
+          <div class="social-item">
+            <a href=""><i class="icon-pinterest"></i></a>
+          </div>
+          <div class="social-item">
+            <a href=""><i class="icon-youtube-play"></i></a>
+          </div>
+          <div  class="social-item" id="rss">
+            <a href=""><i class="icon-rss"></i></a>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <div class="wrapper">
+        <div  class="row">
+          <div class="col-xl-12 col-lg-6 col-md-6">
+            <p>Copyright © 2015 <span>codeitStore</span> All Rights Reserved.</p>
+        </div>
+        
+        <div class="col-xl-12 col-lg-6 col-md-6">
+          <div class="pay-systems">
+            <div class="pay-icon"><a href=""><img src="images/footercard/visaelectron.png" alt=""></a></div>
+            <div class="pay-icon"><a href=""><img src="images/footercard/paypal.png" alt=""></a></div>
+            <div class="pay-icon"><a href=""><img src="images/footercard/visa.png" alt=""></a></div>
+            <div class="pay-icon"><a href=""><img src="images/footercard/mastercard.png" alt=""></a></div>
+            <div class="pay-icon"><a href=""><img src="images/footercard/maestro.png" alt=""></a></div>
+            <div class="pay-icon"><a href=""><img src="images/footercard/discover.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script src="js/jquerry.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/buzina-pagination.min.js"></script>
+</body>
+</html>

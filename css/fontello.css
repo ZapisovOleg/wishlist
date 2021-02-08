@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/font/fontello.eot?49074965');
+  src: url('../fonts/font/fontello.eot?49074965#iefix') format('embedded-opentype'),
+       url('../fonts/font/fontello.woff2?49074965') format('woff2'),
+       url('../fonts/font/fontello.woff?49074965') format('woff'),
+       url('../fonts/font/fontello.ttf?49074965') format('truetype'),
+       url('../fonts/font/fontello.svg?49074965#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-trash-empty:before { content: '\e800'; font-size: 15px; } /* '' */
+.icon-basket:before { content: '\e801'; font-size: 15px; } /* '' */
+.icon-truck:before { content: '\e802'; font-size: 22px; color: #444; } /* '' */
+.icon-headphones:before { content: '\e803'; font-size: 22px; color: #444;} /* '' */
+.icon-mail:before { content: '\e804'; } /* '' */
+.icon-facebook:before { content: '\e805'; } /* '' */
+.icon-linkedin:before { content: '\e806'; } /* '' */
+.icon-search:before { content: '\e807'; } /* '' */
+.icon-down-open:before { content: '\e808';font-size: 10px; } /* '' */
+.icon-right-open:before { content: '\e809'; font-size: 10px; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-rss:before { content: '\f09e'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-thumbs-up-alt:before { content: '\f164';font-size: 22px; color: #444; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
+.icon-pinterest:before { content: '\f231'; } /* '' */
+.icon-commenting:before { content: '\f27a'; font-size: 22px; color: #444;} /* '' */
+.icon-shopping-bag:before { content: '\f290'; } /* '' */
